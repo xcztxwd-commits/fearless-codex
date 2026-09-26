@@ -107,3 +107,16 @@ python tools/check.py
 86 个工作流改编自原项目的模块化技能模板，原始许可与版权信息见 `LICENSE`、`NOTICE.md`。保留技术主题，更新品牌命名和技能引用；不携带旧项目的整段全局覆盖指令。
 
 官方参考：[插件打包与市场](https://developers.openai.com/plugins/build/plugins)、[技能加载与分发](https://learn.chatgpt.com/docs/build-skills)。客户端安装成功、技能被发现、欢迎语实际输出、具体业务任务成功是四项不同的检查，不能相互替代。
+
+## 发布验证记录
+
+2026-09-26，Windows，`codex-cli 0.158.0-alpha.2.1`，使用独立 `CODEX_HOME` 验证，未修改原有 Codex 配置：
+
+- 官方插件校验器通过；官方技能校验器 87/87 通过。
+- 从公开 GitHub 地址添加市场并安装成功；CLI 返回 `installed: true`、`enabled: true`。
+- 原生 `install.cmd` 与可选 `install.ps1` 均完成安装；重复安装通过。
+- Codex app-server 的 `skills/list` 实际发现全部 87 个技能，加载错误为 0。
+- 已安装的欢迎入口包含指定唤醒词和逐字一致的欢迎语；显式技能名为 `fearless-codex:fearless-start`。
+- 卸载、重新安装通过；匿名读取 GitHub 仓库成功。
+
+这些测试没有调用模型生成欢迎语，也没有执行各业务技能。自然语言自动触发、不同模型的逐字输出，以及其他操作系统、旧版或受组织策略限制的客户端，仍需在对应环境验证。无法保证任意 Codex 版本仅收到一个 URL 就自动完成安装。
