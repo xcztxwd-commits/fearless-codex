@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.build-backups/
+.test-home/
+dist/
+.DS_Store

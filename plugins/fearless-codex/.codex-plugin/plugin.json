@@ -1,0 +1,25 @@
+{
+  "name": "fearless-codex",
+  "version": "1.0.0",
+  "description": "无畏工作台：专属欢迎入口与 86 个分析、开发和创作工作流技能。",
+  "author": {
+    "name": "xcztxwd-commits",
+    "url": "https://github.com/xcztxwd-commits"
+  },
+  "repository": "https://github.com/xcztxwd-commits/fearless-codex",
+  "homepage": "https://github.com/xcztxwd-commits/fearless-codex",
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "无畏工作台",
+    "shortDescription": "现在你还怕什么 · 87 个工作流技能",
+    "longDescription": "自定义欢迎页，包含二进制分析、游戏开发研究、网络安全、接口云端、样本取证、自动化及创作工作流。不附带账户、密钥或远程服务。",
+    "developerName": "xcztxwd-commits",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "现在你还怕什么"
+    ],
+    "websiteURL": "https://github.com/xcztxwd-commits/fearless-codex"
+  }
+}

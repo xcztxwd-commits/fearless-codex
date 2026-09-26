@@ -1,0 +1,20 @@
+{
+  "name": "fearless-codex-marketplace",
+  "interface": {
+    "displayName": "Fearless Codex Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "fearless-codex",
+      "source": {
+        "source": "local",
+        "path": "./plugins/fearless-codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

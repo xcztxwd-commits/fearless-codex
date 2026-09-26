@@ -1,0 +1,6 @@
+interface:
+  display_name: "无畏工作台"
+  short_description: "用专属唤醒词打开工作台，按任务选择分析、开发、自动化与创作技能"
+  default_prompt: "$fearless-codex:fearless-start 现在你还怕什么"
+policy:
+  allow_implicit_invocation: true
